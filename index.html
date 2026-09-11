@@ -135,6 +135,18 @@ footer a{color:var(--accent-400)}
   footer{padding-bottom:3.5rem}
   .norm-note{margin-top:2rem}   /* Luft zwischen Quellcode-Sektion und Disclaimer */
 }
+
+/* ---------- Mobile-Polish v2 (Vision-Feedback Runde 2) ---------- */
+@media(max-width:47.99rem){
+  nav{gap:.4rem 1.05rem}
+  nav .nav-link{padding:.65rem .3rem}          /* großzügiger, ≥48px */
+  .app{max-width:16rem;box-shadow:0 10px 28px hsl(212 50% 3% / .5)}
+  /* Mockup nicht ansichtsfenster-abgeschnitten: unter Hero voll sichtbar (nichts fixieren) */
+  .app{aspect-ratio:auto}
+}
+@media(max-width:26rem){
+  nav .nav-link{font-size:.85rem;padding:.6rem .15rem}
+}
 </style>
 </head>
 <body>

@@ -31,6 +31,7 @@
   --radius:10px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
+img,svg{max-width:100%}
 html{scroll-behavior:smooth}
 body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased}
 h1,h2,h3{font-family:'Space Grotesk','Inter',sans-serif;line-height:1.2;letter-spacing:-.01em}
@@ -93,6 +94,27 @@ h2{font-size:clamp(1.4rem,3.5vw,1.9rem);margin-bottom:1rem}
 .norm-note{margin-top:1.25rem;font-size:.8rem;color:var(--muted)}
 footer{border-top:1px solid var(--line);margin-top:3rem;padding:2rem 0 3rem}
 footer .frow{display:flex;gap:1.25rem;flex-wrap:wrap;font-size:.85rem;color:var(--muted)}
+
+/* ---------- Mobile ---------- */
+@media(max-width:47.99rem){
+  nav{flex-wrap:wrap;gap:.55rem .9rem;padding:1rem 0}
+  nav .spacer{display:none}
+  nav .brand{width:100%}
+  nav .nav-link{font-size:.88rem}
+  .hero{padding:2.25rem 0 2.25rem;gap:1.75rem}
+  .hero h1{font-size:clamp(1.75rem,7.2vw,2.4rem)}
+  .app{max-width:17.5rem}
+  section{padding:2.5rem 0}
+  .cta-row .btn-primary{width:100%;justify-content:center}
+  .dl-row{grid-template-columns:1fr;gap:.6rem}
+  .feats{gap:1.4rem}
+  .stepcard{padding:1rem}
+  /* Tabellen/DL-Zeilen niemals breiter als Viewport */
+  html,body{max-width:100%;overflow-x:hidden}
+}
+@media(max-width:22rem){
+  .hero h1{font-size:1.7rem}
+}
 </style>
 </head>
 <body>

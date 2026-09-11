@@ -127,6 +127,14 @@ footer .frow{display:flex;gap:1.25rem;flex-wrap:wrap;font-size:.85rem;color:var(
 }
 /* Generell: Inline-Links gut tippbar (auch Desktop schadet nicht) */
 main a{padding:.25rem 0}
+
+/* ---------- Footer-Kontrast + Safe-Area (Vision-Feedback) ---------- */
+footer{padding-bottom:3.5rem}
+footer a{color:var(--accent-400)}
+@media(max-width:47.99rem){
+  footer{padding-bottom:3.5rem}
+  .norm-note{margin-top:2rem}   /* Luft zwischen Quellcode-Sektion und Disclaimer */
+}
 </style>
 </head>
 <body>
